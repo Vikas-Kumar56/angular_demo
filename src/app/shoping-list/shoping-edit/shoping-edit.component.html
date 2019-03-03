@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-12">
+    <form>
+      <div class="row">
+        <div class="col-md-5 form-group">
+          <label for="name">Ingredient Name</label>
+          <input [(ngModel)]="ingredient.name" id="name" type="text" class="form-control" name="name" />
+        </div>
+        <div class="col-md-2 form-group">
+          <label for="amount">Ingredient Amount</label>
+          <input [(ngModel)]="ingredient.amount" id="amount" type="number" class="form-control" name="amount" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button (click)="onAddIngredient()" type="submit" class="btn btn-success">Add</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="reset" class="btn btn-primary">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

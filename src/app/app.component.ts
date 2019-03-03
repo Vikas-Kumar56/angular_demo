@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'first-app';
+
+  selectedValue: string = 'recipe';
+  onSelected(selectedValue: string) {
+    this.selectedValue = selectedValue;
+  }
+
+
 }
