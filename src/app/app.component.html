@@ -1,9 +1,12 @@
 <header (selectedItem)="onSelected($event)"></header>
 <div class="container">
-    <div class="row" *ngIf="selectedValue == 'recipe'">
+  <!-- <div class="row" *ngIf="selectedValue == 'recipe'">
         <app-recipe></app-recipe>
     </div>
     <div class="row" *ngIf="selectedValue == 'shopping-list'">
         <app-shoping-list></app-shoping-list>
-    </div>
+    </div> -->
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
 </div>
