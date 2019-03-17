@@ -10,6 +10,7 @@ import Ingredient from "src/app/shared/ingredient.model";
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: {
+    id: number;
     name: string;
     description: string;
     imagePath: string;
